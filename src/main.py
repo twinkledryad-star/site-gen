@@ -73,10 +73,10 @@ else:
 
 def main():
     source = "static"
-    destination = "public"
+    destination = "docs"
     try:
         copy_directory(source=source, destination=destination)
-        print("Copy completed, Source: Static, Destination: Public")
+        print("Copy completed, Source: Static, Destination: Docs")
     except Exception as e:
         print(f"Did not complete copy, Error: {e}")
 
@@ -84,7 +84,7 @@ def main():
 
 
     
-    generate_page_recursive("content", "template.html", "public", basepath)
+    generate_page_recursive("content", "template.html", "docs", basepath)
     
 
 if __name__ == "__main__":
